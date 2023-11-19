@@ -28,4 +28,10 @@ return new ResponseEntity<>(this.matchService.getLiveMatches(),HttpStatus.OK);
 public ResponseEntity<List<Match>> getAllMatches(){
 return new ResponseEntity<>(this.matchService.getAllMatches(),HttpStatus.OK);
 }
+@GetMapping("/point-table")
+public ResponseEntity<?> getPointTable()
+{
+	return new ResponseEntity<>(this.matchService.getPointTable(),HttpStatus.OK);
+}
+
 }

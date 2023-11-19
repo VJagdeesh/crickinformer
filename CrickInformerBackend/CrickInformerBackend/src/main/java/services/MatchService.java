@@ -8,5 +8,5 @@ import entities.Match;
 public interface MatchService {
 List<Match> getAllMatches();
 List<Match> getLiveMatches();
-List<Map<String,String>> getPointTable();
+List<List<String>> getPointTable();
 }
